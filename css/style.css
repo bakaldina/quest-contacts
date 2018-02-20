@@ -1,0 +1,120 @@
+body {
+    font-size: 16px;
+}
+.mobile {
+    display: none;
+}
+.desktop {
+    display: block;
+}
+ol.contacs-list {
+    padding: 0;
+    list-style-position: inside;
+}
+.contacs-list li {
+    font-weight: 900;
+    margin-bottom: 5px;
+}
+.contacs-list a {
+    text-decoration: none;
+    color: #000;
+}
+.contacs-list-light {
+    font-weight: 400;
+}
+.contacts-title {
+    font-size: 36px;
+}
+.contacts-social li {
+    margin-bottom: 16px;
+}
+.contacts-social-item a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.contacts-social-item a:hover,
+.contacs-list a:hover,
+.contacts-link a:hover  {
+    color: #ff5a5f;
+}
+ul.contacts-social {
+    list-style: none;
+    padding: 0;
+}
+.contacts-social-item img {
+    margin-right: 10px;
+    height: 24px;
+    width: 24px;
+}
+.contacts-social-phone img {
+    height: 32px;
+    width: 32px;
+}
+.contacts-social-phone a {
+    font-size: 24px;; 
+    color: #ff5a5f;
+}
+.contacts-link {
+    margin-bottom: 40px;
+}
+.contacts-link, .contacts-link a  {
+    color: #888888;
+    font-size: 16px;
+}
+.contacts-link a {
+    text-decoration: underline;
+}
+.contacts-image img {
+    width: 295px;
+    height: 345px;
+    margin-top: 74px;
+    margin-bottom: 16px;
+}
+.contacts-button {
+    background-color: #ff5a5f;
+    color: #FFF;
+    margin: 0 auto;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 200px;
+    height: 55px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 55px;
+    margin-top: 44px;
+}
+@media (max-width: 768px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        padding: 0 20px;
+    }
+    .contacts-title {
+        font-size: 22px;
+    }
+    .contacs-list li {
+        margin-bottom: 16px;
+    }
+    a.all-quests {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        color: #ff6600;
+        font-size: 18px;
+        margin-top: 30px;
+    }
+    a.all-quests:after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        border-left: 2px solid #ff6600;
+        border-bottom: 2px solid #ff6600;
+        -webkit-transform: rotate(-45deg) translate(8px, 4px);
+        transform: rotate(-45deg) translate(8px, 4px);
+    }
+}
