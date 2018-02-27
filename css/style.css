@@ -1,12 +1,7 @@
 body {
   font-size: 16px;
 }
-.mobile {
-  display: none;
-}
-.desktop {
-  display: block;
-}
+
 ul.breadcrumb {
   padding: 0;
   margin-top: 45px;
@@ -109,13 +104,16 @@ ul.contacts-social {
   line-height: 55px;
   margin-top: 44px;
 }
+.contacs-mobile {
+  float:right;
+}
+.all-quests {
+  display: none;
+}
 @media (max-width: 768px) {
-  .desktop {
+  .mobile-hide,
+  .contacts-social-vk, .contacts-social-fb, .contacts-social-ig,.contacts-social-yu, .contacts-image{
     display: none;
-  }
-  .mobile {
-    display: block;
-    padding: 0 20px;
   }
   .contacts-title {
     font-size: 22px;
@@ -130,6 +128,7 @@ ul.contacts-social {
     color: #ff6600;
     font-size: 18px;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
   a.all-quests:after {
     content: "";
