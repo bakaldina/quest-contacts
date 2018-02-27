@@ -7,6 +7,25 @@ body {
 .desktop {
   display: block;
 }
+ul.breadcrumb {
+  padding: 0;
+  margin-top: 45px;
+  font-size: 14px;
+}
+.breadcrumb li {
+  display: inline-block;
+}
+.breadcrumb li a {
+color: #939292;
+}
+.breadcrumb__active {
+  color: #ff711b;
+}
+.breadcrumb__active:before {
+  color: #cccccc;
+  content: "/";
+  padding: 0 10px;
+}
 ol.contacs-list {
   padding: 0;
   list-style-position: inside;
